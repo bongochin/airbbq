@@ -7,6 +7,7 @@ import LoginFormPage from "./components/LoginFormPage";
 import Home from './components/Home'
 import Header from './components/Header'
 import Browse from './components/Browse'
+import SearchBar from './components/SearchBar'
 
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
@@ -35,6 +36,7 @@ function App() {
           </Route>
         </Switch> */}
         <Header />
+        <SearchBar />
         <Switch >
           <Route path='/' exact>
             <Browse />
