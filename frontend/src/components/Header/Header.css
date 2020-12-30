@@ -10,9 +10,9 @@
 }
 
 .header-logo {
- object-fit: contain;
- height: 100px;
- margin-left: 20px;
+  object-fit: contain;
+  height: 100px;
+  margin-left: 20px;
 }
 
 .searchBox {

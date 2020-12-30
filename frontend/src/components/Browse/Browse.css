@@ -9,6 +9,7 @@
   -o-background-size: cover;
   background-size: cover;
   height: 50vh;
+  border-radius: 30px;
 }
 
 .description {
@@ -16,9 +17,10 @@
   color: whitesmoke;
   padding-top: 15vh;
   padding-left: 50px;
-  padding-right: 50px;
+  padding-right: 20px;
   padding-bottom: 40px;
   width: 300px;
+  border-radius: 30px;
 }
 
 .description > button {
