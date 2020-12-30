@@ -6,6 +6,7 @@ import LoginFormPage from "./components/LoginFormPage";
 
 import Home from './components/Home'
 import Header from './components/Header'
+import Browse from './components/Browse'
 
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
@@ -19,19 +20,26 @@ function App() {
 
   return (
     <>
-      <Navigation isLoaded={isLoaded} />
-      {/* {isLoaded && ( */}
+      {/* <Header isLoaded={isLoaded} />
+      {isLoaded && (
         <Switch>
-          {/* <Route path="/login" >
+          <Route path="/login" >
             <LoginFormPage />
           </Route>
           <Route path="/signup">
             <SignupFormPage />
-          </Route> */}
-          {/* <Route path='/'> */}
-            <Header />
+          </Route>
+          <Route path='/' exact>
+            <Browse />
             <Home />
-          {/* </Route> */}
+          </Route>
+        </Switch> */}
+        <Header />
+        <Switch >
+          <Route path='/' exact>
+            <Browse />
+            <Home />
+          </Route>
         </Switch>
       {/* )} */}
     </>
