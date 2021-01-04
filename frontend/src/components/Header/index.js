@@ -3,13 +3,17 @@ import './Header.css'
 import SearchIcon from '@material-ui/icons/Search';
 import MenuIcon from '@material-ui/icons/Menu';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
+import { useHistory } from 'react-router-dom';
 
 function Header() {
+  const history = useHistory()
 	return (
     <div className='headerWrapper'>
 
       <div className="header">
-        <img className="header-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Logo_of_the_New_York_City_Department_of_Parks_%26_Recreation.svg/1200px-Logo_of_the_New_York_City_Department_of_Parks_%26_Recreation.svg.png" alt="" />
+        <img className="header-logo"
+        onClick={() => history.push('/')}
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Logo_of_the_New_York_City_Department_of_Parks_%26_Recreation.svg/1200px-Logo_of_the_New_York_City_Department_of_Parks_%26_Recreation.svg.png" alt="" />
       </div>
 
       <div className='searchBox'>

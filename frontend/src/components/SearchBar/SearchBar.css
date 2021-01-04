@@ -1,0 +1,53 @@
+.searchPanel {
+  position: absolute;
+  top: 151px;
+  left: 25%;
+  width: 100vw;
+}
+
+.searchPanel > h5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 559px;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 363px;
+}
+
+.searchPanel > input {
+  width: 539px;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  height: 30px;
+  top: 420px;
+  border: none;
+}
+
+.searchPanel > input:focus {
+  outline-width: 0;
+}
+
+.searchPanel > button {
+  position: absolute;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  border: 2px solid lightgrey;
+  border-radius: 999px;
+  left: 0;
+  top: 480px;
+  text-transform: inherit !important;
+  background-color: rgb(125,98,1);
+  color: whitesmoke;
+  width: 579px;
+}
+
+.searchPanel > button:hover {
+  background-color: whitesmoke;
+  color: rgb(125,98,1);
+}
