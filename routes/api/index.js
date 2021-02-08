@@ -4,7 +4,7 @@ const usersRouter = require('./users.js');
 
 // GET /api/set-token-cookie
 const asyncHandler = require('express-async-handler');
-const { setTokenCookie } = require('../../utils/auth.js');
+const { setTokenCookie } = require('../../backend/utils/auth.js');
 const { User } = require('../../db/models');
 router.get(
   '/set-token-cookie',
@@ -20,7 +20,7 @@ router.get(
 );
 
 // GET /api/restore-user
-const { restoreUser } = require('../../utils/auth.js');
+const { restoreUser } = require('../../backend/utils/auth.js');
 router.get('/restore-user', restoreUser, (req, res) => {
   return res.json(req.user);
 });
