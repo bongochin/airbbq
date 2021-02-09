@@ -4,7 +4,7 @@ const usersRouter = require('./users.js');
 
 // GET /api/set-token-cookie
 const asyncHandler = require('express-async-handler');
-const { setTokenCookie } = require('../../backend/utils/auth.js');
+const { setTokenCookie } = require('../../utils/validation');
 const { User } = require('../../db/models');
 router.get(
   '/set-token-cookie',
