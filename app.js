@@ -40,6 +40,8 @@ app.use(
   })
 );
 
+router.use(express.static(path.resolve('./client/build')));
+
 app.use(routes); // Connect all the routes
 
 // Catch unhandled requests and forward to error handler.
