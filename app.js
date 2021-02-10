@@ -11,6 +11,7 @@ const { environment } = require('./config');
 const isProduction = environment === 'production';
 
 const app = express();
+const path = require('path');
 
 app.use(morgan('dev'));
 
@@ -40,7 +41,7 @@ app.use(
   })
 );
 
-router.use(express.static(path.resolve('./client/build')));
+app.use(express.static(path.resolve('./client/build')));
 
 app.use(routes); // Connect all the routes
 
